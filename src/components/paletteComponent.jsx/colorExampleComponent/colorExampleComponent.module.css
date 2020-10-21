@@ -1,0 +1,32 @@
+.color_element {
+    width: 54px;
+    height: 54px;
+    display: inline-block;
+    margin: 12.5px;
+    
+}
+
+.color_element button {
+    position: relative;
+    top: 12px;
+    right: -10px;
+    text-align: right;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.color_element button:hover {
+    opacity: 1;
+}
+.color_element_example {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgba(10, 132, 255, 1);
+    z-index: 10;
+}
