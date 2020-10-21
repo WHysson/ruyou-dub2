@@ -1,4 +1,17 @@
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('./fonts/GothamPro.eot');
+	src: local('Gotham Pro'), local('GothamPro'),
+		url('./fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/GothamPro.woff') format('woff'),
+		url('./fonts/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .App {
+  font-family: Gotham Pro;
   position: relative;
   width: 1440px;
   height: 820px;
@@ -15,15 +28,15 @@
   border-radius: 28px;
   background-color: #000000;
 }
-.content-wrapper{
+.content_wrapper{
   padding: 36px 51px;
 }
-.content-wrapper .link {
+.content_wrapper .link {
   text-decoration: none;
   color: #ffffff;
   padding: 17px;
 }
-.content-wrapper .link:focus{
+.content_wrapper .link:focus{
   text-decoration: underline #ffffff;
 }
 

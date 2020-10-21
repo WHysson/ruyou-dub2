@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './fonts/stylesheet.css'
 import { NavLink } from 'react-router-dom'
 import { Route } from 'react-router-dom';
 import FormComponent from './components/formComponent/formComponent';
@@ -9,8 +10,8 @@ function App() {
   return (
     <div className="App">
       <div className="content">
-        <div className="content-wrapper">
-          <div className="content-wrapper-form">
+        <div className="content_wrapper">
+          <div className="content_wrapper_form">
             <NavLink className="link" to="/form">Форма</NavLink>
             <NavLink className="link" to="/palette">Палитра</NavLink>
             <Route path='/form' render={() => <FormComponent/>}/>
