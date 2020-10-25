@@ -1,4 +1,5 @@
 import React from 'react';
+import { ChromePicker    } from 'react-color';
 import ColorExample from './colorExampleComponent/colorExampleComponent';
 import style from './paletteComponent.module.css'
 
@@ -18,9 +19,9 @@ function PaletteComponent() {
         <ColorExample />
         <button className={style.contact_form_button}>Добавить цвет</button>
       </div>
-
       <div>
       </div>
+      <ChromePicker    className={style.picker}/>
     </div>
   );
 }

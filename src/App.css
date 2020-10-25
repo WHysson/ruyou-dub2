@@ -12,19 +12,12 @@
 
 .App {
   font-family: Gotham Pro;
-  position: relative;
-  width: 1440px;
-  height: 820px;
+  padding: 45px;
   border-radius: 28px;
   background-color: #1F2223;
-  margin: 30px auto;
 }
 .content {
-  position: absolute;
-  width: 1354px;
-  height: 730px;
-  top: 43px;
-  left: 43px;
+  width: 100%;
   border-radius: 28px;
   background-color: #000000;
 }

@@ -25,3 +25,9 @@
 .contact_form_button:hover {
     opacity: 0.8;
 }
+
+.picker {
+    position: relative;
+    left: 350px;
+    top: 233px;
+}
