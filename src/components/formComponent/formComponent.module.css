@@ -20,17 +20,35 @@
     border: none;
   }
   
+  .content_form img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+  .input_label {
+    text-align: center;
+    width:122px;
+    height: 86px;
+    padding: 12px 28px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: rgba(118, 118, 128, 0.24);
+    color: rgba(235, 235, 245, 0.6);
+    outline: none;
+    border: none;
+  }
+
+  .input_label input {
+    display: none;
+  }
+  
   .content_form input::placeholder{
     color: #ffffff;
     opacity: 24%;
     font-size: 17px;
     font-weight: 400;
-  }
-  
-  .content_form .content_form_imageUpload {
-    width:122px;
-    height: 86px;
-    padding: 12px 28px;
   }
   
   .contact_form_button {

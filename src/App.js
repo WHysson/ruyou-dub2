@@ -16,6 +16,7 @@ function App() {
             <NavLink className="link" to="/palette">Палитра</NavLink>
             <Route path='/form' render={() => <FormComponent/>}/>
             <Route path='/palette' render={() => <PaletteComponent/>}/>
+            <Route exact path='/' render={() => <FormComponent/>}/>
            
           </div>
         </div>

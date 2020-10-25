@@ -1,13 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './formComponent.module.css'
 
 
 
 function FormComponent() {
-  return (
-   
+    const [file, setState] = useState(require("./../../images/Vector.png"))
 
-            <div className="formComponent">
+    const inputRef = React.createRef()
+
+    const triggerClick = () => {
+        inputRef.current.click()
+    }
+
+    const imageHandler = (e) => {
+        const reader = new FileReader()
+        reader.onload = () => {
+            if (reader.readyState === 2) {
+                setState(reader.result)
+            }
+        }
+        reader.readAsDataURL(e.target.files[0])
+    }
+
+    return (
+
+
+        <div className="formComponent">
             <form className={style.content_form} action="">
                 <div>
                     <label htmlFor="Name">Имя</label>
@@ -22,8 +40,11 @@ function FormComponent() {
                     <input type="text" placeholder="Отчество" />
                 </div>
                 <div>
-                    <label htmlFor="Photo">Фото</label>
-                    <input className={style.content_form_imageUpload} type="image" src={require("./../../images/Vector.png")} width="60" height="56" placeholder="Отчество" />
+                    <label htmlFor="input">Фото</label>
+                    <label className={style.input_label} htmlFor="input">
+                        <img onClick={triggerClick} src={file} alt="" />
+                        <input onChange={imageHandler} ref={inputRef} className={style.content_form_imageUpload} name="image-upload" accept="image/*" type="file" src={file} />
+                    </label>
                 </div>
                 <div>
                     <button className={style.contact_form_button}>Сохранить</button>
@@ -34,9 +55,9 @@ function FormComponent() {
                 </div>
             </form>
         </div>
-       
-    
-  );
+
+
+    );
 }
 
 export default FormComponent;
